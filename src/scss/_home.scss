@@ -1,0 +1,54 @@
+.home {
+  background: linear-gradient(
+      90deg,
+      rgba(251, 251, 251, 0.522) 0%,
+      rgba(251, 251, 251, 0) 53.68%
+    ),
+    url("./background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+
+  &__content {
+    max-width: 840px;
+    height: 248px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      90deg,
+      rgba(246, 246, 246, 0.76) 38.67%,
+      rgba(246, 246, 246, 0.0304) 95.9%
+    );
+    position: relative;
+    top: 170px;
+  }
+
+  &__text {
+    padding-top: 3px;
+    padding-right: 3px;
+    display: inline-block;
+  }
+
+  &__big-font {
+    font-size: 48px;
+    font-weight: 500;
+    font-style: italic;
+    color: #8bc540;
+    text-align: center;
+  }
+
+  &__small-font {
+    font-size: 32px;
+    font-style: italic;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+  }
+}

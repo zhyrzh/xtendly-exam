@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,500&display=swap");
+
 /* Box sizing rules */
 *,
 *::before,
@@ -26,14 +28,13 @@ html:focus-within {
 html,
 body {
   height: 100%;
-  font-family: $font;
-  color: $neutral-900;
+  font-family: "Roboto", sans-serif;
+  color: #3f3f3f;
 }
 
 /* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
@@ -46,7 +47,6 @@ img,
 picture,
 svg {
   max-width: 100%;
-  display: block;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
