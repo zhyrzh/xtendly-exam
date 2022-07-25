@@ -10,6 +10,7 @@
   background-size: cover;
   min-height: 100vh;
   position: relative;
+  padding-inline: 10px;
 
   &__content {
     max-width: 840px;
@@ -25,6 +26,7 @@
     );
     position: relative;
     top: 170px;
+    margin-left: -10px;
   }
 
   &__text {
@@ -50,5 +52,90 @@
     display: flex;
     align-items: flex-end;
     margin-left: auto;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    width: 944px;
+    height: 108px;
+    background-color: white;
+    position: absolute;
+    margin-top: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    overflow: hidden;
+    bottom: 0;
+  }
+
+  &__form-left-title {
+    height: 100%;
+    width: 310px;
+    background-color: #8bc540;
+    position: relative;
+    padding-top: 25px;
+    clip-path: polygon(92% 0, 100% 50%, 92% 100%, 0 100%, 0 0);
+  }
+
+  &__form-left-title-primary {
+    font-weight: 700;
+    font-size: 28px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__form-left-title-secondary {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+  }
+
+  &__form-content {
+    height: 100%;
+    max-width: calc(944px - 310px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-right: 20px;
+  }
+
+  &__form-content-title {
+    color: #8bc540;
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  &__form-inputs {
+    margin-bottom: 18px;
+  }
+
+  &__input {
+    height: 34px;
+    width: 180px;
+    border: none;
+    border: 1px solid #6d6e70;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 14px;
+    &:not(:nth-of-type(1)) {
+      margin-left: 4px;
+    }
+  }
+
+  &__input-submit {
+    width: 214px;
+    height: 34px;
+    margin-left: 4px;
+    border: none;
+    background-color: #8bc540;
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    border: 2px solid #6f973b;
+    border-radius: 3px;
   }
 }
